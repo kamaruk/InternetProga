@@ -10,20 +10,15 @@
 
 var gameGrid = cardsArray.concat(cardsArray);
 
-
 gameGrid.sort(function () {
     return 0.5 - Math.random();
 })
 
-
 var game = document.getElementById("game-board");
-
 
 var grid = document.createElement('section');
 
-
 grid.setAttribute('class', 'grid');
-
 
 game.appendChild(grid);
 
@@ -59,7 +54,6 @@ var secondGuess = '';
 
 var count = 0;
 var previousTarget = null;
-
 var delay = 1200;
 
 
