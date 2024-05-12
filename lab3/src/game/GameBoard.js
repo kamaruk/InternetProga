@@ -5,21 +5,18 @@ import Data from "./data";
 import Card from "./Card"; 
 function GameBoard() { 
 	const [cardsArray, setCardsArray] = React.useState([]); 
-	const [moves, setMoves] = React.useState(0); 
 	const [firstCard, setFirstCard] = React.useState(null); 
 	const [secondCard, setSecondCard] = React.useState(null); 
 	const [stopFlip, setStopFlip] = React.useState(false); 
-	const [won, setWon] = React.useState(0); 
+
 
 
 	function NewGame() { 
 		setTimeout(() => { 
 			const randomOrderArray = Data.sort(() => 0.5 - Math.random()); 
 			setCardsArray(randomOrderArray); 
-			setMoves(0); 
 			setFirstCard(null); 
 			setSecondCard(null); 
-			setWon(0); 
 		}, 1200); 
 	} 
 
@@ -46,7 +43,6 @@ function GameBoard() {
 						} 
 					}); 
 				}); 
-				setWon((preVal) => preVal + 1); 
 				removeSelection(); 
 			} else { 
 				setTimeout(() => { 
@@ -60,7 +56,7 @@ function GameBoard() {
 		setFirstCard(null); 
 		setSecondCard(null); 
 		setStopFlip(false); 
-		setMoves((prevValue) => prevValue + 1); 
+
 	} 
 	React.useEffect(() => { 
 		NewGame(); 
@@ -88,14 +84,6 @@ function GameBoard() {
 					)) 
 				} 
 			</div> 
-
-			{won !== 6 ? ( 
-				<div className="comments">Moves : {moves}</div> 
-			) : ( 
-				<div className="comments"> 
-					ʕ•ᴥ•ʔ You Won in {moves} moves ʕ•ᴥ•ʔ 
-				</div> 
-			)} 
 			<button className="button" onClick={NewGame}> 
 				New Game 
 			</button> 
