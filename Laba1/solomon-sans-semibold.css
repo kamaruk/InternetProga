@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Solomon-Sans-SemiBold';
+	src: url('../fonts/solomon-sans-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/solomon-sans-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/solomon-sans-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/solomon-sans-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/solomon-sans-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/solomon-sans-semibold.svg#solomon-sans-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

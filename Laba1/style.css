@@ -1,7 +1,32 @@
+@font-face {
+    font-family: 'Solomon-Sans-Normal'; /* Имя вашего шрифта */
+    src: url('/fonts/ofont.ru_Solomon\ Sans.ttf') format('truetype'); /* Путь к файлу шрифта */
+}
+@font-face {
+    font-family: 'Solomon-Sans-black'; /* Имя вашего шрифта */
+    src: url('/fonts/ofont.ru_Solomon\ Sans_black.ttf') format('truetype'); /* Путь к файлу шрифта */
+}
+
+@font-face { 
+    font-family: "Solomon-Sans-Bold";
+    src: url("/fonts/ofont.ru_Solomon\ Sans-Bolt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Solomon-Sans-SemiBold';
+	src: url('../fonts/solomon-sans-semibold.ttf') format('truetype');
+    font-weight: 400;
+}
+
+
+
 body{
 margin: 0;
 width: 100%;
 height: 100%;
+font-family: "Solomon-Sans-Normal", sans-serif;
 background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 50%, rgba(160,236,251,1) 100%);
 
 }
@@ -52,18 +77,20 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     text-decoration: none;
     margin-left: 30px;
     color: rgb(0, 73, 144);
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
 
 }
-
-
-
     .nav-link:hover {
-        text-decoration: underline
+        text-decoration: underline;
+        color: rgb(4, 98, 192)  
+
     }
 
 
 
-.headblock3 {
+.headblock {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,13 +168,10 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     
 }
 
-
 .D1-11 {
     display: flex;
 
 }
-
-
 
 .D1-11 h1 {
     vertical-align: middle;  
@@ -164,7 +188,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     
 }
 
-
 .D1-12_text {
     color: #ffffff;
     max-width: 26vw;
@@ -175,9 +198,6 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     letter-spacing: 0px;  
     text-align: left;  
 }
-
-
-
 
 .D1-21_buttons {
     display: flex;
@@ -201,7 +221,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     display: flex;
 }
 
-.D1-211 {
+.D1-210 {
     vertical-align: middle;
     border: 4px solid white;
     padding: 0.1vw 3vh; 
@@ -210,7 +230,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     text-align: center;
 }
 
-.D1-212 button {
+.D1-211 button {
     vertical-align: middle;
     width: 69px;
     height: 65px;
@@ -221,19 +241,18 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
 
 }
 
-.D1-212{
+.D1-211{
     display: flex;
     margin-left: 636px;
     width: 137px;
     height: 65px;
 }
 
-
-.D1-212 button:hover {
+.D1-211 button:hover {
     background-color: rgb(0, 73, 144);
 }
 
-.D1-212 img {
+.D1-211 img {
     width: 15px;
     background-size: contain;
     
@@ -292,7 +311,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     box-shadow: #D8D8D8;
 }
 
-.D1-32_text_block h1 {
+.D1-32_text h1 {
     text-align: left;
     margin-left: 49px;
     color: rgb(255, 255, 255);
@@ -304,7 +323,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     margin-top: 50px;
 }
 
-.D1-32_text_block h3 {
+.D1-32_text h3 {
     text-align: left;
     margin-left: 50px;
     color: rgb(255, 255, 255);
@@ -316,7 +335,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
 
 }
 
-.D1-32_text_block p {
+.D1-32_text p {
     color: #ffffff;
     font-family: 'Solomon-Sans-Normal', sans-serif;
     font-weight: 400;
@@ -347,11 +366,11 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     flex-wrap: nowrap;
 }
 
-.D1-33-1_text_block {
+.D1-33-1_text {
     background: rgb(0, 73, 144);
 }
 
-.D1-33-1_text_block h2 {
+.D1-33-1_text h2 {
     color: rgb(255, 255, 255);
     font-family: Solomon-Sans-SemiBold;
     font-size: 18px;
@@ -365,7 +384,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
 
 }
 
-.D1-33-1_text_block p {
+.D1-33-1_text p {
     color: rgb(255, 255, 255);
     font-family: Solomon-Sans-Normal;
     font-size: 12px;
@@ -380,12 +399,12 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     cursor: cell;
 }
 
-.D1-33-1_text_block p:hover {
+.D1-33-1_text p:hover {
     color: #48A7C8;  
     border-left: 2px solid #48A7C8;  
 }
 
-.D1-33-2_new_questians {
+.D1-33-2_new {
     position: absolute;  
     bottom: 0vh;
     right: -3vh;
@@ -396,22 +415,22 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     justify-content: space-around;
 }
 
-.D1-33-2_new_questians h1 {
+.D1-33-2_new h1 {
     margin-left: 10px ;
 }
 
-.D1-33-2_new_questians p {
+.D1-33-2_new p {
     background-color: #48A7C8;
     margin-left: 10px;
 }
 
-.D1-33-2_new_questians div {
+.D1-33-2_new div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.D1-33-1_text_block a {
+.D1-33-1_text a {
     position: absolute;
     bottom: 22px;
     margin-left: 30px;
@@ -424,10 +443,13 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     text-decoration: none;
 } 
 
-.D1-33-1_text_block a:hover{
+.D1-33-1_text a:hover{
     color: #48A7C8;  
     border-bottom: 2px solid #48A7C8;  
 }
+
+
+
 
 .D2-40{
     display: flex;
@@ -437,6 +459,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     justify-content: space-between;
  
 }
+
  .D2-400{
     width: 333px;
     height: 364px;
@@ -464,21 +487,24 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
 
 }
 
-.D2-41_text_top_materials h2 {
+.D2-41_text h2 {
     color: rgb(255, 255, 255);
     font-family: Solomon-Sans-Bold;
     font-size: 40px;
     font-weight: 400;
     line-height: 44px;
     letter-spacing: 0px;
-    
-    background-color: #004990;
-    margin-left: 1.435vw;
-    margin-right: 4.82vw;
+ 
+    text-align: left;
 
 }
 
-.D2-41_text_top_materials p {
+.D2-41_text h2 span {
+    background-color: rgb(0, 73, 144);
+    padding: 0.7vw 2vw 1vw 2vw;
+}
+
+.D2-41_text p {
     color: rgb(0, 0, 0);
     font-family: Solomon-Sans-Normal;
     font-size: 12px;
@@ -487,14 +513,15 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     letter-spacing: 0px;
     text-align: left;
 
-    margin-left: 1.435vw;
+    
     margin-right: 0.82vw;
     padding: 12px; 
     cursor: cell;
 }
 
-.D2-41_text_top_materials p:hover {
-    background: rgb(163, 166, 167)
+.D2-41_text p:hover {
+    background: rgb(163, 166, 167);
+    clip-path: polygon(0 0, 92% 0%, 97% 50%, 92% 100%, 0% 100%);
 }
 
 .D2-42_img_backout_text {
@@ -520,6 +547,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     background-color: #040421;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8)
 }
+
 .D2-42_img_backout_text p {
     position: absolute;
     bottom: 3.8vh;
@@ -558,7 +586,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
   
 }
 
-.D2-43-2_new_materials {
+.D2-43-2_new {
     width: 132px;
     height: 53px;  
     align-items: center;
@@ -568,16 +596,17 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     justify-content: space-around;
 }
 
-.D2-43-2_new_materials h2 {
+.D2-43-2_new h2 {
     margin-left: 10px ;
 }
 
-.D2-43-2_new_materials p {
+.D2-43-2_new p {
     background-color: #48A7C8;
     margin-left: 10px;
+    font-size: 9px;
 }
 
-.D2-43-2_new_materials div {
+.D2-43-2_new div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -620,7 +649,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     text-align: left;
 }
 
-.D3-511_h1_and_count {
+.D3-511 {
     width: 50px;
     height: 50px;  
     align-items: center;
@@ -632,17 +661,16 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     position: absolute;
 }
 
-.D3-511_h1_and_count h2 {
+.D3-511 h2 {
     margin-left: 10px ;
 }
 
-.D3-511_h1_and_count div {
+.D3-511 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-
 
 .D3-512_but{
     margin-left: 200px;
@@ -666,19 +694,30 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
     width: 1196px;
     height: 469px;
     margin-top: -184px;
+    margin-left: 5px;
+    position: static;
+    
 }
 
 .D4-60{
     display: flex;
     align-items: center;
     
+    
 
 }
 
+.D4-61 {
+    margin-top: 255px;
+    margin-left: 50px;
+    
+    
+}
 
-.D4-61, .D4-62 {
+.D4-62{
     margin-top: 200px;
-    text-align: left;
+    margin-left: 50px;
+    
 }
 
 .D4-611_links a {
@@ -688,14 +727,11 @@ background: radial-gradient(circle, rgba(255,255,255,1) 13%, rgba(255,255,255,1)
 }
 
 .D4-611_links a:hover {
-    text-decoration: underline;}  
-
-.D4-62{
-    margin-right: 200px;
-    align-items: end;
-}
-
+    text-decoration: underline;
+}  
 
 .img_main1{
-    color: black;
+    filter: brightness(8);
+    margin-top: 50px;
+    margin-left: 20px;
 }
